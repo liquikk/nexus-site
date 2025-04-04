@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>VR-клуб NEXUS | Клуб виртуальной реальности в Шелехове</title>
+</head>
+<body>
+    <main class="content">
+      <div id="booking-window" class="booking">
+        <form class="booking-form">
+          <img id="close-booking" class="close-booking" src="/icons/cross.svg" alt="крестик">
+          <div class="booking-form-text">
+            <h3>Забронировать сеанс</h3>
+            Оставьте свой номер и мы вам перезвоним
+          </div>
+          <div class="input-phone booking-input">
+            <label class="visually-hidden" for="phone-booking-form">Телефон</label>
+            <div class="pre-input">+7</div>
+            <input type="tel" id="phone-booking-form" name="phone" placeholder="(999) 999-99-99" required maxlength="15" pattern="\(\d{3}\) \d{3}-\d{2}-\d{2}">
+          </div>
+          <button class="booking-button button" type="submit">Отправить заявку</button>
+          <div class="booking-form-privat-policy-text">Нажимая на кнопку «Отправить заявку» вы соглашаетесь с условиями 
+            <a class="privat-policy" href="">политики конфиденциальности</a>
+          </div>
+        </form>
+      </div>
+      <div id="overlay" class="overlay"></div>
+      <div class="full-scroll">
+      <header class="header">
+        <a href="/" class="header-logo">
+            <img src="./icons/NEXUS.png"
+            alt="NEXUS Logo" 
+            class="header-logo-img"
+            loading="lazy">
+        </a>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+              <li class="header-menu-item">
+                <a href="#about" class="header-menu-link">О нас</a>
+              </li>  
+              <li class="header-menu-item">
+                <a href="#rent" class="header-menu-link">Аренда</a>
+              </li>  
+              <li class="header-menu-item">
+                <a href="#price-list" class="header-menu-link">Цены</a>
+              </li>  
+              <li class="header-menu-item">
+                <a href="" class="header-menu-link visually-hidden">Игры</a>
+              </li>  
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a class="header-number header-button button"
+                href="tel:+7 (983) 241-28-16"
+                >
+                +7 (983) 241‒28‒16
+        </a>
+            <button class="header-button button open-booking"
+                type="button"
+                >
+                Забронировать
+            </button>
+        </div> 
+    </header>
+      <h1 class="visually-hidden">VR-клуб NEXUS</h1>
+      <section class="banner">
+        <h2 class="visually-hidden">Главная страница VR-клуба NEXUS</h2>
+        <div class="circle blue-one"></div>
+        <div class="circle blue-two"></div>
+        <div class="circle pink-one"></div>
+        <div class="circle pink-two"></div>
+        <div class="circle violet-one"></div>
+        <div class="banner-body">
+          <div class="banner-info">
+            <div class="number">1</div>
+            <div class="city">в шелехове</div>
+          </div>
+          <div class="banner-title">
+            <h3 class="main-title main-title-right">vr-клуб</h3>
+            <h3 class="main-title main-title-left">nexus</h3>
+          </div>
+          <img src="./imgs/vr-headset.png" alt="Шлем виртуальный реальности" class="banner-img">
+          <button class="main-button button open-booking" type="button">
+            Забронировать сеанс
+          </button>
+          <div class="text-top">Погрузитесь в мир виртуальной реальности!</div>
+          <div class="text-right">Новые эмоции, адреналин и незабываемые приключения!</div>
+          <div class="text-bottom">Виртуальные миры ждут своих героев! Откройте для себя новые горизонты, почувствуйте адреналин и станьте частью невероятных приключений. Ваше путешествие начинается здесь!</div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2 class="visually-hidden">О клубе виртуальной реальности NEXUS</h2>
+        <div class="text-about">
+          <h3 class="title-about">NEXUS - первый клуб виртуальной реальности в городе Шелехов</h3>
+          Рады представить вам наш VR-клуб в котором вы сможете открыть для себя мир виртуальной реальности, а также отлично провести время в одиночну, с друзями или же с семьёй!
+        </div>
+        <div class="blocks-about">
+          <div class="blocks-about-left">
+            <div class="block-about">
+              <h4>Много игр</h4>
+              Одиночные и совместные игры - VR, PS5, а также настольные игры
+            </div>
+            <div class="block-about dark-violet">
+              <h4>Активности</h4>
+              Мы регулярно устраиваем турниры и розыгрыши, с нами не заскучаешь
+            </div>
+          </div>
+          <div class="blocks-about-right">
+            <div class="block-about dark-violet">
+              <h4>Аренда</h4>
+              Проведём для вас день рождения и любое другое мероприятия
+            </div>
+            <div class="block-about">
+              <h4>с 5 лет</h4>
+              <b>Для детей и взрослых</b>
+              Широкий ассортимент игр на любой вкус 
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+      <section class="rent" id="rent">
+        <h2 class="visually-hidden">Аренда клуба</h2>
+        <h3 class="rent-title">Отметьте по-новому: праздники, где каждый в игре!</h3>
+        <div class="rent-blocks">
+          <div class="rent-block">
+            <img src="/imgs/child_dr.jpg" alt="Детское день рождение">
+            <div class="rent-block-text">
+              <b class="event-name">Детские дни рождения</b>
+              Устроим незабываемый праздник! Подготовим всё для создания праздничной атмосферы для именинника и его друзей. 
+            </div>
+          </div>
+          <div class="rent-block">
+            <img src="/imgs/321.jpg" alt="День рождение для взрослых">
+            <div class="rent-block-text">
+              <b class="event-name">Взрослые дни рождения</b>
+            Устали от однообразных сценариев? Мы поможем сделать ваш день рождения уникальным и ярким!
+            </div>
+          </div>
+          <div class="rent-block">
+            <img src="/imgs/123.jpg" alt="Развлекательные мероприятия">
+            <div class="rent-block-text">
+              <b class="event-name">Развлекательные мероприятия</b>
+              Мы предлагаем уникальные развлечения для любого повода: от игр на PlayStation 5 и VR до караоке и настольных игр. 
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta1">
+        <h2 class="visually-hidden">Форма для получения консультации</h2>
+        <form class="form-cta1">
+        <div class="text-cta1">
+          <h3>Остались вопросы?</h3>
+          Тогда оставьте свой номер телефона и мы перезвоним вам!
+        </div>
+        <div class="actions-cta1">
+          <div class="input-phone">
+            <label class="visually-hidden" for="phone-cta1">Телефон</label>
+            <div class="pre-input">+7</div>
+            <input type="tel" id="phone-cta1" name="phone" placeholder="(999) 999-99-99" required maxlength="15" pattern="\(\d{3}\) \d{3}-\d{2}-\d{2}">
+          </div>
+          <button class="button" type="submit">Получить косультацию</button>
+        </div>
+        </form>
+      </section>
+      <section class="advantage">
+        <h2 class="visually-hidden">Преимущества клуба</h2>
+        <div class="advantage-text">
+          <h3>Новый уровень отдыха</h3>
+          Откройте для себя современные развлечения в комфортной атмосфере
+        </div>
+        <div class="advantage-blocks">
+          <div class="advantage-block">
+            <img src="/icons/vr-headset.svg" alt="Шлем виртуальной реальности">
+            <div class="advantage-block-text">
+              <h4>4</h4>
+              <p>Станции VR очков</p>
+              Oculus Quest 2
+            </div>
+          </div>
+          <div class="advantage-block">
+            <img src="/icons/console-controller.svg" alt="Игровой контроллер">
+            <div class="advantage-block-text">
+              <h4>3</h4>
+              <p>Игровых зоны</p>
+              с Playstation 5
+            </div>
+          </div>
+          <div class="advantage-block">
+            <img src="/icons/rolling-dices.svg" alt="Игровые кости">
+            <div class="advantage-block-text">
+              <h4>10+</h4>
+              <p>Настольных игр</p>
+              для детей и взрослых
+            </div>
+          </div>
+          <div class="advantage-block">
+            <img src="/icons/microphone.svg" alt="Микрофон">
+            <div class="advantage-block-text">
+              <h4>1</h4>
+              <p>Караоке-зона для</p>
+              любителей петь
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price-list" id="price-list">
+        <h2 class="visually-hidden">Прайс-лист клуба</h2>
+        <h3>Прайс-лист</h3>
+        <div class="price-blocks">
+          <div class="price-block">
+            <div class="price-block-text">
+              <h4>Play Station 5</h4>
+              <p>Комфортные игровые места</p>
+              Погрузитесь в мир современных игр в наших уютных игровых зонах
+            </div>
+            <hr>
+            <div class="price-block-prices">
+              <div class="price-block-days">
+                <p class="invisible-text">60 минут</p>
+                <p>пн-вс</p>
+                <p class="invisible-text">пн-вс</p>
+              </div>
+              <div class="price-block-price">
+                <p>60 минут⁣⁣⁣⁣‎ ⁣</p>
+                <p>200 ₽</p>
+                <p class="invisible-text">650 ₽</p>
+              </div>
+              <div class="price-block-price">
+                <p>120 минут</p>
+                <p>350 ₽</p>
+                <p class="invisible-text">650 ₽</p>
+              </div>
+              <div class="price-block-price">
+                <p>240 минут</p>
+                <p>650 ₽</p>
+                <p class="invisible-text">650 ₽</p>
+              </div>
+            </div>
+            <button class="button open-booking" type="button">Забронировать</button>
+          </div>
+          <div class="price-block">
+            <div class="price-block-text">
+              <h4>VR станция</h4>
+              <p>Большой выбор игр</p>
+              Шагните в мир, где границы стираются, а возможности безграничны
+            </div>
+            <hr>
+            <div class="price-block-prices">
+              <div class="price-block-days">
+                <p class="invisible-text">10 минут</p>
+                <p>пн-пт</p>
+                <p>сб-вс</p>
+              </div>
+              <div class="price-block-price">
+                <p>10 минут</p>
+                <p>150 ₽</p>
+                <p>200 ₽</p>
+              </div>
+              <div class="price-block-price">
+                <p>30 минут</p>
+                <p>350 ₽</p>
+                <p>400 ₽</p>
+              </div>
+              <div class="price-block-price">
+                <p>60 минут</p>
+                <p>650 ₽</p>
+                <p>750 ₽</p>
+              </div>
+            </div>
+            <button class="button open-booking" type="button">Забронировать</button>
+          </div>
+          <div class="price-block">
+            <div class="price-block-text">
+              <h4>Аренда клуба</h4>
+              <p>Незабываемые мероприятия</p>
+              Ваше идеальное место для впечатлений уже ждет вас
+            </div>
+            <hr>
+            <div class="price-block-prices">
+              <div class="price-block-days">
+                <p class="invisible-text">120 минут</p>
+                <p>пн-пт</p>
+                <p>сб-вс</p>
+              </div>
+              <div class="price-block-price">
+                <p>120 минут</p>
+                <p>3900 ₽</p>
+                <p>4900 ₽</p>
+              </div>
+              <div class="price-block-price">
+                <p>180 минут</p>
+                <p>5200 ₽</p>
+                <p>6200 ₽</p>
+              </div>
+              <div class="price-block-price">
+                <p>240 минут</p>
+                <p>6000 ₽</p>
+                <p>7000 ₽</p>
+              </div>
+            </div>
+            <button class="button open-booking" type="button">Забронировать</button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Карта, информация и контакты клуба</h2> 
+            <div id="map"></div>
+            <div id="custom-marker"></div>
+            <div class="contacts-block">
+              <div class="contacts-block-text">
+                <h4>Информация и контакты</h4>
+                С нетерпением ждём вашего визита!
+              </div>
+              <div class="contacts-block-info">
+                <div class="contacts-block-info-item">
+                  <div class="icon-border">
+                  <img src="/icons/Phone.svg" alt="телефон">
+                  </div>
+                  <div class="info-item-text">
+                    <p>Телефон:</p>
+                    IPhone 13 pro max 
+                  </div>
+                </div>
+                <div class="contacts-block-info-item">
+                  <div class="icon-border">
+                  <img src="/icons/mark.svg" alt="Метка">
+                  </div>
+                  <div class="info-item-text">
+                    <p>Адрес:</p>
+                    Шелехов, Култукский тракт, 14а
+                  </div>
+                </div>
+                <div class="contacts-block-info-item">
+                  <div class="icon-border">
+                  <img src="/icons/clock.svg" alt="Часы">
+                  </div>
+                  <div class="info-item-text">
+                    <p>Режим работы:</p>
+                    Ежедневно 10:00 - 20:00
+                  </div>
+                </div>
+              </div>
+            </div>    
+      </section>
+      <footer class="footer">
+        <a href="/">
+        <img src="/icons/logo_footer.png" alt="Логотип NEXUS"
+        class="header-logo-img"
+        loading="lazy">
+        </a>
+        <ul class="socials">
+          <li class="social-icons">
+            <a href="https://t.me/nexusshel" target="_blank">
+            <img class="tg" src="/icons/tg.svg" alt="Telegram">
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://vk.com/nexus138" target="_blank">
+            <img class="vk" src="/icons/vk.svg" alt="VK">
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://chat.whatsapp.com/I6ObLHpkSK56GEbAzOVN3n" target="_blank">
+            <img class="whatsapp" src="/icons/whatsapp.svg" alt="Whatsapp">
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <script src="scripts/modal.js"></script>
+    <script src="/scripts/banner_animation.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="scripts/map.js"></script> 
+    <script src="scripts/phone-input.js"></script>
+    <script src="scripts/full-scroll.js"></script>
+</body>
+</html>
