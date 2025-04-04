@@ -983,7 +983,7 @@ a:hover{
   position: absolute;
   width: 50px; 
   aspect-ratio: 1;
-  background-image: url('/icons/pin-point.png'); 
+  background-image: url('icons/pin-point.png'); 
   background-size: cover;
   pointer-events: none; 
   transform: translate(-50%, -100%); 
