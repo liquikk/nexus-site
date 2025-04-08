@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             hasScrolledDown = true;
             scrollToSection(aboutSection);
+            
         }
 
         // Скролл вверх — если зашли на full-scroll сверху
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             hasScrolledDown = false;
             scrollToSection(document.body);
+            
         }
     }, { passive: false });
 });

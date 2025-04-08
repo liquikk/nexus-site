@@ -28,7 +28,7 @@ DG.then(function () {
 
     // Слушаем изменение окна
     window.addEventListener('resize', updateMapView);
-    updateMapView(); // Вызываем сразу при загрузке
+    updateMapView();
 
     map.on('move', updateMarkerPosition);
     updateMarkerPosition();

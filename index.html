@@ -8,6 +8,54 @@
 </head>
 <body>
     <main class="content">
+      <div class="menu" id="menu">
+        <img id="close-menu" class="close-menu" src="icons/cross.svg" alt="крестик">
+        <div class="menu-top">
+        <a href="/" class="menu-logo">
+          <img src="icons/logo_footer.png"
+          alt="NEXUS Logo" 
+          class="menu-logo-img"
+          loading="lazy">
+      </a>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="#about" class="menu-list-item-link">О нас</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#rent" class="menu-list-item-link">Аренда</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#price-list" class="menu-list-item-link">Цены</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-bottom">
+        <div class="menu-text">
+          <a href="tel:+7 (983) 241-28-16" class="menu-text-number">
+            +7 (983) 241-28-16
+          </a>
+          Шелехов, Култукский тракт, 14а
+        </div>
+        <ul class="menu-list-icons socials">
+          <li class="social-icons">
+            <a href="https://t.me/nexusshel" target="_blank">
+            <img class="tg" src="icons/tg.svg" alt="Telegram">
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://vk.com/nexus138" target="_blank">
+            <img class="vk" src="icons/vk.svg" alt="VK">
+            </a>
+          </li>
+          <li class="social-icons">
+            <a href="https://chat.whatsapp.com/I6ObLHpkSK56GEbAzOVN3n" target="_blank">
+            <img class="whatsapp" src="icons/whatsapp.svg" alt="Whatsapp">
+            </a>
+          </li>
+        </ul>
+        <button class="menu-button button open-booking">Забронировать</button>
+      </div>
+      </div>
       <div id="booking-window" class="booking">
         <form class="booking-form">
           <img id="close-booking" class="close-booking" src="icons/cross.svg" alt="крестик">
@@ -62,6 +110,7 @@
                 >
                 Забронировать
             </button>
+            <img src="icons/burger-menu.svg" alt="Меню" class="burger-menu">
         </div> 
     </header>
       <h1 class="visually-hidden">VR-клуб NEXUS</h1>
@@ -90,6 +139,7 @@
           <div class="text-bottom">Виртуальные миры ждут своих героев! Откройте для себя новые горизонты, почувствуйте адреналин и станьте частью невероятных приключений. Ваше путешествие начинается здесь!</div>
         </div>
       </section>
+    </div>
       <section class="about" id="about">
         <h2 class="visually-hidden">О клубе виртуальной реальности NEXUS</h2>
         <div class="text-about">
@@ -120,6 +170,42 @@
           </div>
         </div>
       </section>
+    <div class="header header-second">
+      <a href="/" class="header-logo">
+          <img src="icons/NEXUS.png"
+          alt="NEXUS Logo" 
+          class="header-logo-img"
+          loading="lazy">
+      </a>
+      <nav class="header-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a href="#about" class="header-menu-link">О нас</a>
+            </li>  
+            <li class="header-menu-item">
+              <a href="#rent" class="header-menu-link">Аренда</a>
+            </li>  
+            <li class="header-menu-item">
+              <a href="#price-list" class="header-menu-link">Цены</a>
+            </li>  
+            <li class="header-menu-item">
+              <a href="" class="header-menu-link visually-hidden">Игры</a>
+            </li>  
+          </ul>
+      </nav>
+      <div class="header-actions">
+          <a class="header-number header-button button"
+              href="tel:+7 (983) 241-28-16"
+              >
+              +7 (983) 241‒28‒16
+      </a>
+          <button class="header-button button open-booking"
+              type="button"
+              >
+              Забронировать
+          </button>
+          <img src="icons/burger-menu.svg" alt="Меню" class="burger-menu">
+      </div> 
     </div>
       <section class="rent" id="rent">
         <h2 class="visually-hidden">Аренда клуба</h2>
@@ -308,6 +394,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Карта, информация и контакты клуба</h2> 
             <div id="map"></div>
+            <div class="contacts-scroll-section"></div>
             <div id="custom-marker"></div>
             <div class="contacts-block">
               <div class="contacts-block-text">
@@ -376,5 +463,6 @@
     <script src="scripts/map.js"></script> 
     <script src="scripts/phone-input.js"></script>
     <script src="scripts/full-scroll.js"></script>
+    <script src="scripts/header.js"></script>
 </body>
 </html>
