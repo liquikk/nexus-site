@@ -7,6 +7,7 @@
     <title>VR-клуб NEXUS | Клуб виртуальной реальности в Шелехове</title>
 </head>
 <body>
+  <a href="https://dikidi.ru/#widget=184722" id="dikidiLink" style="display: none;"></a>
     <main class="content">
       <div class="menu" id="menu">
         <img id="close-menu" class="close-menu" src="icons/cross.svg" alt="крестик">
@@ -56,25 +57,6 @@
         <button class="menu-button button open-booking">Забронировать</button>
       </div>
       </div>
-      <div id="booking-window" class="booking">
-        <form class="booking-form">
-          <img id="close-booking" class="close-booking" src="icons/cross.svg" alt="крестик">
-          <div class="booking-form-text">
-            <h3>Забронировать сеанс</h3>
-            Оставьте свой номер и мы вам перезвоним
-          </div>
-          <div class="input-phone booking-input">
-            <label class="visually-hidden" for="phone-booking-form">Телефон</label>
-            <div class="pre-input">+7</div>
-            <input type="tel" id="phone-booking-form" name="phone" placeholder="(999) 999-99-99" required maxlength="15" pattern="\(\d{3}\) \d{3}-\d{2}-\d{2}">
-          </div>
-          <button class="booking-button button" type="submit">Отправить заявку</button>
-          <div class="booking-form-privat-policy-text">Нажимая на кнопку «Отправить заявку» вы соглашаетесь с условиями 
-            <a class="privat-policy" href="">политики конфиденциальности</a>
-          </div>
-        </form>
-      </div>
-      <div id="overlay" class="overlay"></div>
       <div class="full-scroll">
       <header class="header">
         <a href="/" class="header-logo">
@@ -261,7 +243,7 @@
           <div class="advantage-block">
             <img src="icons/vr-headset.svg" alt="Шлем виртуальной реальности">
             <div class="advantage-block-text">
-              <h4>4</h4>
+              <h4>3</h4>
               <p>Станции VR очков</p>
               Oculus Quest 2
             </div>
@@ -458,27 +440,31 @@
       </footer>
     </main>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(100953767, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/100953767" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+      ym(100953767, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/100953767" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript" src="https://dikidi.ru/assets/js/widget_record/widget2.min.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/banner_animation.js"></script>
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script src="scripts/map.js"></script> 
     <script src="scripts/phone-input.js"></script>
     <script src="scripts/full-scroll.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/tg_send_number.js"></script>
 </body>
 </html>

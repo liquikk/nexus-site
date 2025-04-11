@@ -3,29 +3,31 @@ document.addEventListener("DOMContentLoaded", function () {
     let aboutSection = document.querySelector("#about");
     let isAnimating = false;
     let hasScrolledDown = false;
+
     
     function scrollToSection(targetSection) {
         if (isAnimating) return;
         isAnimating = true;
     
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowY = 'hidden';
     
         targetSection.scrollIntoView({ behavior: "smooth" });
 
         setTimeout(() => {
-            document.body.style.overflow = '';
+            document.body.style.overflowY = '';
             isAnimating = false;
-        }, 300);
+        }, 100);
     }
 
     window.addEventListener("wheel", function (event) {
-        if (isAnimating || !fullScrollSection || !aboutSection) return;
+        let isActive = this.document.body.classList.contains('active');
+        if (isAnimating || !fullScrollSection || !aboutSection || isActive) return;
 
         let rect = fullScrollSection.getBoundingClientRect();
         let viewportHeight = window.innerHeight;
 
         // Скролл вниз 
-        if (event.deltaY > 0 && !hasScrolledDown && rect.top < viewportHeight * 1.2 && rect.bottom > 0) {
+        if (event.deltaY > 0 && !hasScrolledDown && rect.top < viewportHeight * 1.5 && rect.bottom > 0) {
             event.preventDefault();
             hasScrolledDown = true;
             scrollToSection(aboutSection);
