@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let phoneInputs = document.querySelectorAll('[name="phone"]');
-    
-    phoneInputs.forEach(input => {
-       
-        input.addEventListener('input', function (e) {
-            // Удаляем все символы, кроме цифр
-            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-            // Форматируем ввод по шаблону (999) 999-99-99
-            e.target.value = !x[1] ? '' : '(' + x[1] + (x[2] ? ') ' + x[2] : '') + (x[3] ? '-' + x[3] : '') + (x[4] ? '-' + x[4] : '');
-        });
+export function init() {
+    const formatPhone = (input) => {
+      const numbers = input.value.replace(/\D/g, '');
+      const match = numbers.match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+      input.value = !match[1] ? '' : `(${match[1]}${match[2] ? `) ${match[2]}` : ''}${match[3] ? `-${match[3]}` : ''}${match[4] ? `-${match[4]}` : ''}`;
+    };
+  
+    document.querySelectorAll('[name="phone"]').forEach(input => {
+      input.addEventListener('input', (e) => formatPhone(e.target));
     });
-});
+  
+    console.log('PhoneInput module initialized');
+  }

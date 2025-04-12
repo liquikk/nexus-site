@@ -1,19 +1,17 @@
-const header = document.querySelector('.header-second');
-const target = document.querySelector('.full-scroll');
+export function init() {
+  const header = document.querySelector('.header-second');
+  const target = document.querySelector('.full-scroll');
+  if (!header || !target) return;
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        header.classList.remove('active');
-      } else {
-        header.classList.add('active');
-      }
-    });
-  },
-  {
-    threshold: 0.01 
-  }
-);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        header.classList.toggle('active', !entry.isIntersecting);
+      });
+    },
+    { threshold: 0.01 }
+  );
 
-observer.observe(target);
+  observer.observe(target);
+  console.log('Header module initialized');
+}
