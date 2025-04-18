@@ -331,6 +331,7 @@ h4{
     text-align: center;
     justify-content: center;
     height: fit-content;
+    outline: 1px solid #971AFF;
 }
 
 .button:hover{
@@ -506,79 +507,10 @@ a:hover{
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; 
   }
 
-.modal-open{
-  overflow: hidden;
-}
+  .modal-open{
+    overflow: hidden !important;
+  }
 
-.overlay.active{
-  opacity: 1; 
-  visibility: visible; 
-  z-index: 1002;
-}
-
-.booking.active{
-  opacity: 1; 
-  visibility: visible; 
-  transform: translate(-50%, -50%) scale(1); 
-  z-index: 10000;
-}
-
-.overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(6px) brightness(0.4);
-  z-index: -1;
-  overflow-y: hidden;
-  opacity: 0; 
-  transition: opacity 0.3s ease, visibility 0.3s ease; 
-}
-
-.close-booking{
-  position: absolute;
-  width: 24px;
-  top: 20px;
-  right: 20px;
-}
-
-.booking-form{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 520px;
-  border-radius: var(--border-radius);
-  background-color: var(--color-gray);
-  padding: 40px 60px;
-}
-
-.booking-form-text{
-  margin-bottom: var(--offset-headline-to-text);
-}
-
-.booking-form-text>h3{
-  margin-bottom: var(--offset-text-small);
-  font-size: 32px;
-}
-
-.input-phone.booking-input{
-  margin-bottom: var(--offset-text-small);
-  width: auto;
-}
-
-.booking-button{
-  margin-bottom: var(--offset-headline-to-text);
-}
-
-.booking-form-privat-policy-text{
-  text-align: left;
-  font-size: 12px;
-}
-
-.privat-policy{
-  text-decoration: underline;
-}
 
 .banner{
   position: relative;
@@ -624,15 +556,8 @@ a:hover{
   font-size: 1.67vw;
   padding: 1.5vw 3.125vw;
   border-radius: 32px;
-  border: 1px solid transparent;
   background-color: #7109b7b6;
-  border-color: #9900ff;
   pointer-events: all;
-}
-
-.main-button:hover{
-  border: 1px solid transparent;
-  
 }
 
 .banner-info{
@@ -863,15 +788,30 @@ a:hover{
   margin-bottom: var(--offset-text-small);
 }
 
+.cta1{
+  height: auto;
+  padding: calc(120px - 32px) 20.83vw;
+  background-color: var(--color-gray);
+  justify-content: center;
+}
+
+.actions-cta1-privat-policy{
+  text-align: center;
+  margin-top: 32px;
+  font-size: 12px;
+}
+
+.actions-cta1-privat-policy a {
+  text-decoration: underline;
+}
+
 .form-cta1{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: auto;
-  padding: var(--section-padding);
-  background-color: var(--color-gray);
   column-gap: 65px;
+  position: relative;
 }
 .text-cta1{
   min-width: 305px;
@@ -1120,7 +1060,7 @@ a:hover{
 }
 
 .icon-border>img{
-  width: 32px;
+  height: 26px;
 }
 
 .footer{
@@ -1161,6 +1101,13 @@ a:hover{
   filter: brightness(0) invert(0.5) sepia(1) saturate(5) hue-rotate(90deg);
 }
 
+.cc-message { 
+  font-family: var(--font-family-base) !important; 
+}
+.cc-btn { 
+  font-family: var(--font-family-base) !important; 
+  border-radius: var(--border-radius) !important; 
+}
 
 
 @media (max-width: 1600px){
@@ -1382,21 +1329,6 @@ a:hover{
   }
   .actions-cta1>.button{
     height: auto;
-  }
-  .booking-form{
-    width: 400px;
-  }
-  .booking-form-text>h3{
-    font-size: 24px;
-  }
-  .booking-form-text{
-    font-size: 12px;
-  }
-  .booking-form-privat-policy-text{
-    font-size: 9px;
-  }
-  .close-booking{
-    width: 20px;
   }
 }
 @media (max-width:480px){

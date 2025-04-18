@@ -23,11 +23,11 @@ export function init() {
   
     setInterval(() => {
       const iframe = document.querySelector('iframe[src*="dikidi.ru"]');
-      const shouldLock = iframe && getComputedStyle(iframe).display !== 'none';
+      const shouldLock = (iframe && getComputedStyle(iframe).display !== 'none') || DOM.menu.classList.contains('active');;
       
       document.documentElement.classList.toggle('modal-open', shouldLock);
       document.body.classList.toggle('modal-open', shouldLock);
-    }, 100);
+    }, 300);
   
     console.log('Modal module initialized');
   }

@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+    <link preload rel="stylesheet" href="css.css">
+
+    <meta name="title" content="VR-клуб NEXUS | Виртуальная реальность в Шелехове" />
+    <meta name="description" content="VR-клуб NEXUS — первый клуб виртуальной реальности с Playstation 5, настольными играми и караоке в Шелехове. Забронируйте сеанс онлайн!">
+    <meta name="keywords" content="шелехов, виртуальная реальность, playstation 5, аренда vr, день рождения в vr, аренда, день рождение, развлечения, праздники, 
+    vr, vr игры, vr клуб, виар клуб шелехов, виар шелехов, виртуальная реальность иркутск, вр" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="VR-клуб NEXUS | Виртуальная реальность в Шелехове" />
+    <meta property="og:description" content="Игры в VR, PlayStation 5 и караоке для детей и взрослых. Забронируйте сеанс онлайн!" />
+
+    <!-- Изображение для превью (1200x630px) -->
+    <meta property="og:image" content="/" />
+
+    <meta property="og:locale" content="ru_RU" />
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NEXUS" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <meta name="theme-color" content="#2E2C2D" />
+    <meta name="robots" content="index, follow" />
+    <meta name="geo.region" content="RU-IRK" />
+    <meta name="geo.placename" content="Шелехов" />
+    <link rel="canonical" href="" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
     <title>VR-клуб NEXUS | Клуб виртуальной реальности в Шелехове</title>
 </head>
 <body>
   <a href="https://dikidi.ru/#widget=184722" id="dikidiLink" style="display: none;"></a>
     <main class="content">
       <div class="menu" id="menu">
-        <img id="close-menu" class="close-menu" src="icons/cross.svg" alt="крестик">
+        <img id="close-menu" class="close-menu" src="icons/cross.svg" alt="крестик" loading="lazy">
         <div class="menu-top">
         <a href="/" class="menu-logo">
           <img src="icons/logo_footer.png"
@@ -28,6 +60,9 @@
           <li class="menu-list-item">
             <a href="#price-list" class="menu-list-item-link">Цены</a>
           </li>
+          <li class="menu-list-item">
+            <a href="#contacts" class="menu-list-item-link">Контакты</a>
+          </li>
         </ul>
       </div>
       <div class="menu-bottom">
@@ -40,17 +75,17 @@
         <ul class="menu-list-icons socials">
           <li class="social-icons">
             <a href="https://t.me/nexusshel" target="_blank">
-            <img class="tg" src="icons/tg.svg" alt="Telegram">
+            <img class="tg" src="icons/tg.svg" alt="Telegram" loading="lazy">
             </a>
           </li>
           <li class="social-icons">
             <a href="https://vk.com/nexus138" target="_blank">
-            <img class="vk" src="icons/vk.svg" alt="VK">
+            <img class="vk" src="icons/vk.svg" alt="VK" loading="lazy">
             </a>
           </li>
           <li class="social-icons">
             <a href="https://chat.whatsapp.com/I6ObLHpkSK56GEbAzOVN3n" target="_blank">
-            <img class="whatsapp" src="icons/whatsapp.svg" alt="Whatsapp">
+            <img class="whatsapp" src="icons/whatsapp.svg" alt="Whatsapp" loading="lazy">
             </a>
           </li>
         </ul>
@@ -77,7 +112,7 @@
                 <a href="#price-list" class="header-menu-link">Цены</a>
               </li>  
               <li class="header-menu-item">
-                <a href="" class="header-menu-link visually-hidden">Игры</a>
+                <a href="#contacts" class="header-menu-link">Контакты</a>
               </li>  
             </ul>
         </nav>
@@ -92,7 +127,7 @@
                 >
                 Забронировать
             </button>
-            <img src="icons/burger-menu.svg" alt="Меню" class="burger-menu">
+            <img src="icons/burger-menu.svg" alt="Меню" class="burger-menu" loading="lazy">
         </div> 
     </header>
       <h1 class="visually-hidden">VR-клуб NEXUS</h1>
@@ -112,7 +147,7 @@
             <h3 class="main-title main-title-right">vr-клуб</h3>
             <h3 class="main-title main-title-left">nexus</h3>
           </div>
-          <img src="imgs/vr-headset.png" alt="Шлем виртуальный реальности" class="banner-img">
+          <img src="imgs/vr-headset.png" alt="Шлем виртуальный реальности" class="banner-img" loading="lazy">
           <button class="main-button button open-booking" type="button">
             Забронировать сеанс
           </button>
@@ -171,7 +206,7 @@
               <a href="#price-list" class="header-menu-link">Цены</a>
             </li>  
             <li class="header-menu-item">
-              <a href="" class="header-menu-link visually-hidden">Игры</a>
+              <a href="#contacts" class="header-menu-link">Контакты</a>
             </li>  
           </ul>
       </nav>
@@ -186,7 +221,7 @@
               >
               Забронировать
           </button>
-          <img src="icons/burger-menu.svg" alt="Меню" class="burger-menu">
+          <img src="icons/burger-menu.svg" alt="Меню" class="burger-menu" loading="lazy">
       </div> 
     </div>
       <section class="rent" id="rent">
@@ -194,21 +229,21 @@
         <h3 class="rent-title">Отметьте по-новому: праздники, где каждый в игре!</h3>
         <div class="rent-blocks">
           <div class="rent-block">
-            <img src="imgs/child_dr.jpg" alt="Детское день рождение">
+            <img src="imgs/child_dr.jpg" alt="Детское день рождение" loading="lazy">
             <div class="rent-block-text">
               <b class="event-name">Детские дни рождения</b>
               Устроим незабываемый праздник! Подготовим всё для создания праздничной атмосферы для именинника и его друзей. 
             </div>
           </div>
           <div class="rent-block">
-            <img src="imgs/321.jpg" alt="День рождение для взрослых">
+            <img src="imgs/321.jpg" alt="День рождение для взрослых" loading="lazy">
             <div class="rent-block-text">
               <b class="event-name">Взрослые дни рождения</b>
             Устали от однообразных сценариев? Мы поможем сделать ваш день рождения уникальным и ярким!
             </div>
           </div>
           <div class="rent-block">
-            <img src="imgs/123.jpg" alt="Развлекательные мероприятия">
+            <img src="imgs/123.jpg" alt="Развлекательные мероприятия" loading="lazy">
             <div class="rent-block-text">
               <b class="event-name">Развлекательные мероприятия</b>
               Мы предлагаем уникальные развлечения для любого повода: от игр на PlayStation 5 и VR до караоке и настольных игр. 
@@ -231,8 +266,9 @@
           </div>
           <button class="button" type="submit">Получить косультацию</button>
         </div>
-        </form>
-      </section>
+      </form>
+      <div class="actions-cta1-privat-policy">Нажимая на кнопку «Получить консультацию», вы соглашаетесь с <a href="policy/privat-policy.html">политикой конфиденциальности</a></div>
+    </section>
       <section class="advantage">
         <h2 class="visually-hidden">Преимущества клуба</h2>
         <div class="advantage-text">
@@ -241,7 +277,7 @@
         </div>
         <div class="advantage-blocks">
           <div class="advantage-block">
-            <img src="icons/vr-headset.svg" alt="Шлем виртуальной реальности">
+            <img src="icons/vr-headset.svg" alt="Шлем виртуальной реальности" loading="lazy">
             <div class="advantage-block-text">
               <h4>3</h4>
               <p>Станции VR очков</p>
@@ -249,7 +285,7 @@
             </div>
           </div>
           <div class="advantage-block">
-            <img src="icons/console-controller.svg" alt="Игровой контроллер">
+            <img src="icons/console-controller.svg" alt="Игровой контроллер" loading="lazy">
             <div class="advantage-block-text">
               <h4>3</h4>
               <p>Игровых зоны</p>
@@ -257,7 +293,7 @@
             </div>
           </div>
           <div class="advantage-block">
-            <img src="icons/rolling-dices.svg" alt="Игровые кости">
+            <img src="icons/rolling-dices.svg" alt="Игровые кости" loading="lazy">
             <div class="advantage-block-text">
               <h4>10+</h4>
               <p>Настольных игр</p>
@@ -265,7 +301,7 @@
             </div>
           </div>
           <div class="advantage-block">
-            <img src="icons/microphone.svg" alt="Микрофон">
+            <img src="icons/microphone.svg" alt="Микрофон" loading="lazy">
             <div class="advantage-block-text">
               <h4>1</h4>
               <p>Караоке-зона для</p>
@@ -373,7 +409,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Карта, информация и контакты клуба</h2> 
             <div id="map"></div>
             <div class="contacts-scroll-section"></div>
@@ -386,7 +422,7 @@
               <div class="contacts-block-info">
                 <div class="contacts-block-info-item">
                   <div class="icon-border">
-                  <img src="icons/Phone.svg" alt="телефон">
+                  <img src="icons/phone.png" alt="телефон" loading="lazy">
                   </div>
                   <div class="info-item-text">
                     <p>Телефон:</p>
@@ -395,7 +431,7 @@
                 </div>
                 <div class="contacts-block-info-item">
                   <div class="icon-border">
-                  <img src="icons/mark.svg" alt="Метка">
+                  <img src="icons/mark.png" alt="Метка" loading="lazy">
                   </div>
                   <div class="info-item-text">
                     <p>Адрес:</p>
@@ -404,7 +440,7 @@
                 </div>
                 <div class="contacts-block-info-item">
                   <div class="icon-border">
-                  <img src="icons/clock.svg" alt="Часы">
+                  <img src="icons/clock.png" alt="Часы" loading="lazy">
                   </div>
                   <div class="info-item-text">
                     <p>Режим работы:</p>
@@ -423,17 +459,17 @@
         <ul class="socials">
           <li class="social-icons">
             <a href="https://t.me/nexusshel" target="_blank">
-            <img class="tg" src="icons/tg.svg" alt="Telegram">
+            <img class="tg" src="icons/tg.svg" alt="Telegram" loading="lazy">
             </a>
           </li>
           <li class="social-icons">
             <a href="https://vk.com/nexus138" target="_blank">
-            <img class="vk" src="icons/vk.svg" alt="VK">
+            <img class="vk" src="icons/vk.svg" alt="VK" loading="lazy">
             </a>
           </li>
           <li class="social-icons">
             <a href="https://chat.whatsapp.com/I6ObLHpkSK56GEbAzOVN3n" target="_blank">
-            <img class="whatsapp" src="icons/whatsapp.svg" alt="Whatsapp">
+            <img class="whatsapp" src="icons/whatsapp.svg" alt="Whatsapp" loading="lazy">
             </a>
           </li>
         </ul>
