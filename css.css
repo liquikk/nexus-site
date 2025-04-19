@@ -1109,6 +1109,71 @@ a:hover{
   border-radius: var(--border-radius) !important; 
 }
 
+/* стили политики конфиденциальности */
+.policy-content{
+  padding: var(--section-padding);
+}
+.policy-content>h3{
+  margin-bottom: var(--offset-headline-to-text);
+  font-size: 30px;
+}
+.policy-content>h1{
+  font-size: 42px;
+  margin-bottom: var(--offset-headline);
+}
+.policy-content>p>a{
+  text-decoration: underline;
+}
+.policy-content>p>a:hover{
+  color: var(--color-light-gray);
+}
+
+.policy-header{
+  justify-content: space-between;
+  padding-inline: 20.83vw;
+  background-color: var(--color-dark);
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.policy-content>ul, ol {
+  padding-left: 25px;
+}
+
+.policy-content>li {
+  margin-bottom: 8px;
+}
+
+
+.policy-highlight, .policy-contact-block {
+  background-color: var(--color-gray);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin: 20px 0;
+  min-width: 300px;
+}
+.policy-highlight>table {
+  width: 100%;
+}
+.policy-highlight>td{
+  padding-right: 20px;
+}
+.policy-highlight>table{
+  text-align: left;
+}
+
+.last-update {
+  text-align: right;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+}
 
 @media (max-width: 1600px){
   .header-menu-list{
@@ -1330,6 +1395,19 @@ a:hover{
   .actions-cta1>.button{
     height: auto;
   }
+  .policy-content{
+    padding-inline: 10px;
+    font-size: 14px;
+  }
+  .policy-content>h1,h3{
+    font-size: 24px;
+  }
+  .policy-highlight, .policy-contact-block {
+    padding: 10px;
+  }
+  .policy-content>th,td{
+    padding-right: 5px;
+  }
 }
 @media (max-width:480px){
   .header-button{
@@ -1405,23 +1483,5 @@ a:hover{
   }
   .contacts-block-text{
     font-size: 14px;
-  }
-  .booking-form{
-    width: 320px;
-    padding: 25px 20px;
-  }
-  .booking-form-text>h3{
-    font-size: 24px;
-  }
-  .booking-form-text{
-    font-size: 12px;
-  }
-  .booking-form-privat-policy-text{
-    font-size: 9px;
-  }
-  .close-booking{
-    width: 10px;
-    top: 10px;
-    right: 10px;
   }
 }
